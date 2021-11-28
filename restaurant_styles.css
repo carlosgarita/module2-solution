@@ -1,0 +1,120 @@
+
+/*---------------------------- Reset browsers default values */
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: inherit;
+	font-size: 13px;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    box-sizing:border-box;
+	}
+
+
+/*-------------------------------------------- General Styles */
+
+body {
+    background-color: #0D0A0B;
+}
+
+.container {
+    padding: 10px;
+    border: 1px solid;
+    height: 130px;
+    margin: 5px 10px;
+    background-color: #454955;
+    border-color: #707070;
+    color: #c9c7ca;
+}
+
+.title {
+    border: 1px solid #c9c7ca;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+    min-width: 100px;
+    padding: 5px;
+    float: right;
+    margin: -11px;
+    background-color: #72B01D;
+    color: #306118;
+}
+
+.text {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+h1 {
+    font-size: 1.75em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #c9c7ca;
+}
+
+.medium_devices {
+    padding: 5px 10px 5px 10px;
+}
+
+
+/*----------------------------Media Queries---------------------*/
+
+/*------------Small Devices Settings (Default values)----------*/
+
+.row {
+    width: 100%;
+}
+
+
+/*-------------------Medium Devices Settings------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .medium_devices {
+        float: left;
+        width: 50%;
+    }
+
+    #chicken_child {
+        margin-right: 5px;
+    }
+
+    #beef_child {
+        margin-left: -5px;
+    }
+
+    #sushi_parent {
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+/*--------------------Large Devices Settings----------------------*/
+
+@media (min-width: 992px) {
+
+    .large_devices {
+        float: left;
+        width: 33.33%;
+    }
+
+    #chicken_child {
+        margin-right: auto;
+    }
+
+    #beef_child {
+        margin-right: -10px;
+        margin-left: auto;
+    }
+
+    #sushi_parent {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
